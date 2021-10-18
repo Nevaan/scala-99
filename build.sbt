@@ -9,6 +9,7 @@ lazy val root = project
     scalaVersion := scala3Version,
 
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % "3.2.9" % Test
+      "org.scalactic" %% "scalactic" % "3.2.9",
+      "org.scalatest" %% "scalatest" % "3.2.9" % "test"
     )
   )
