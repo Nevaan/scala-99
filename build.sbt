@@ -45,8 +45,7 @@ createProblem := {
     scrFile.createNewFile()
 
     val srcPrintWriter = new PrintWriter(scrFile)
-    srcPrintWriter.write(s"""
-package `${arg}`
+    srcPrintWriter.write(s"""package `${arg}`
 
 object Problem${arg} {
   def solve() = println("Problem${arg} dummy implementation")
@@ -64,8 +63,7 @@ object Problem${arg} {
     testFile.createNewFile()
 
     val testPrintWriter = new PrintWriter(testFile)
-    testPrintWriter.write(s"""
-package `${arg}`
+    testPrintWriter.write(s"""package `${arg}`
 import org.scalatest.funsuite.AnyFunSuite
 
 class Problem${arg}Test extends AnyFunSuite:

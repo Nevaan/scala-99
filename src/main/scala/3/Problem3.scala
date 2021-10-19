@@ -1,4 +1,3 @@
-
 package `3`
 
 object Problem3 {
